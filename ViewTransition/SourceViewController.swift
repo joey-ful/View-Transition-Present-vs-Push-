@@ -10,12 +10,12 @@ import UIKit
 class SourceViewController: UIViewController {
 
     @IBOutlet weak var hiButton: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        presentAfterThreeSeconds()
     }
 
-    @IBAction func hiButtonTapped(_ sender: Any) {
+    func presentAfterThreeSeconds() {
+        sleep(3)
         guard let destinationViewController = storyboard?.instantiateViewController(identifier: "destinationVC") as? DestinationViewController else {
             return
         }
