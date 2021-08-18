@@ -7,16 +7,16 @@
 
 import UIKit
 
-class DestinationViewController: UIViewController {
+class ChildViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(navigationController?.children)
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 
 }
