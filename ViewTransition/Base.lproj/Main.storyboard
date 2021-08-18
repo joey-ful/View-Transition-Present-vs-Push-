@@ -31,7 +31,7 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YaE-IR-SyO" kind="show" id="KA5-24-jYr"/>
+                                    <action selector="hiButtonTapped:" destination="fJS-k5-O8f" eventType="touchUpInside" id="oW6-16-keP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-ve-30b">
@@ -46,6 +46,9 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fYX-g2-fsc"/>
+                    <connections>
+                        <segue destination="YaE-IR-SyO" kind="show" identifier="mySegue" id="Bva-9R-07w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReC-qq-gSG" sceneMemberID="firstResponder"/>
             </objects>
