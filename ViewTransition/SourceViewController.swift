@@ -9,14 +9,18 @@ import UIKit
 
 class SourceViewController: UIViewController {
 
+    @IBOutlet weak var hiButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func hiButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "mySegue", sender: nil)
+        guard let destinationViewController = storyboard?.instantiateViewController(identifier: "destinationVC") as? DestinationViewController else {
+            return
+        }
+        
+        self.present(destinationViewController, animated: true, completion: nil)
     }
-    
 }
 
