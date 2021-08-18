@@ -9,12 +9,12 @@ import UIKit
 
 class SourceViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        presentViewAfterThreeSeconds()
     }
-
-    @IBAction func hiButtonTapped(_ sender: Any) {
+    
+    func presentViewAfterThreeSeconds() {
+        sleep(3)
         performSegue(withIdentifier: "mySegue", sender: nil)
     }
     
