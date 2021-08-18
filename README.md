@@ -1,4 +1,4 @@
-# 뷰 컨트롤러 간 화면 이동 (View Transition - Presnet/Dismiss vs Push/Pop)
+# 뷰 컨트롤러 간 화면 이동 (Presnet/Dismiss vs Push/Pop)
 > **연관 포스팅**<br>
 [데이터 전달하기 노션 정리글](https://www.notion.so/7-997e10334c82402eabc2e029bf61ad36)<br>
 
